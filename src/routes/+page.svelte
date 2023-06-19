@@ -10,7 +10,7 @@
         return x === "+" || x === "-" || x === "*" || x === "/" || x === "%";
     }
 
-    function addToCalcul(x) {
+    function addToCompute(x) {
         if (display.length > 0) {
             if (isDigit(x)) {
                 if (isOperator(display.slice(-1))) {
@@ -73,29 +73,29 @@
         <div class="btn-line">
             <button on:click={() => clearCalcul()}>C</button>
             <button on:click={() => delFromCalcul()}>DEL</button>
-            <button on:click={() => addToCalcul("%")}>%</button>
-            <button on:click={() => addToCalcul("/")}>/</button>
+            <button on:click={() => addToCompute("%")}>%</button>
+            <button on:click={() => addToCompute("/")}>/</button>
         </div>
         <div class="btn-line">
-            <button on:click={() => addToCalcul("7")}>7</button>
-            <button on:click={() => addToCalcul("8")}>8</button>
-            <button on:click={() => addToCalcul("9")}>9</button>
-            <button on:click={() => addToCalcul("*")}>*</button>
+            <button on:click={() => addToCompute("7")}>7</button>
+            <button on:click={() => addToCompute("8")}>8</button>
+            <button on:click={() => addToCompute("9")}>9</button>
+            <button on:click={() => addToCompute("*")}>*</button>
         </div>
         <div class="btn-line">
-            <button on:click={() => addToCalcul("4")}>4</button>
-            <button on:click={() => addToCalcul("5")}>5</button>
-            <button on:click={() => addToCalcul("6")}>6</button>
-            <button on:click={() => addToCalcul("-")}>-</button>
+            <button on:click={() => addToCompute("4")}>4</button>
+            <button on:click={() => addToCompute("5")}>5</button>
+            <button on:click={() => addToCompute("6")}>6</button>
+            <button on:click={() => addToCompute("-")}>-</button>
         </div>
         <div class="btn-line">
-            <button on:click={() => addToCalcul("1")}>1</button>
-            <button on:click={() => addToCalcul("2")}>2</button>
-            <button on:click={() => addToCalcul("3")}>3</button>
-            <button on:click={() => addToCalcul("+")}>+</button>
+            <button on:click={() => addToCompute("1")}>1</button>
+            <button on:click={() => addToCompute("2")}>2</button>
+            <button on:click={() => addToCompute("3")}>3</button>
+            <button on:click={() => addToCompute("+")}>+</button>
         </div>
         <div class="btn-line">
-            <button on:click={() => addToCalcul("0")}>0</button>
+            <button on:click={() => addToCompute("0")}>0</button>
             <button on:click={() => getResult()}>=</button>
         </div>
     </div>
